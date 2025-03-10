@@ -1,0 +1,102 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", serif;
+    --fonte3: "Playwrite IT Moderna", serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /*Serve para colocar as letras maiores*/
+    font-family: var(--fonte2);
+    font-size: 15vh; /*Ampliar o tamanho da letra com vh*/
+}
+
+header > p {
+    padding-bottom: 50px;
+
+}
+
+a {
+    color: white;
+    text-decoration: none; /*para tirar o traço em baico sublinado*/
+    font-weight: bolder;
+}
+
+a:hover { /*para configurar o codigo quando passar o mose*/
+   text-decoration: underline; 
+}
+
+section {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em; /*Seve para dar espaçamento entre as letras*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vh;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgb(51, 48, 48);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.048); /*Serve para fazer uma sombra interna*/
+    background-attachment: fixed; /*Serve para fixar a imagem no fundo*/
+}
+
+.imagem > p { /*para configurar a box dentro da section imagem*/
+    background-color: rgba(0, 0, 0, 0.253);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    text-shadow: 2px 0px black;
+}
+
+#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
